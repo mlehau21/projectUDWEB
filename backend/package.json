@@ -1,0 +1,24 @@
+{
+  "name": "full-stack-web-app",
+  "version": "1.0.0",
+  "description": "video web app built on nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Rohit Kumawat",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
