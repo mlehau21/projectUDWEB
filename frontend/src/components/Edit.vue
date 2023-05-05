@@ -2,7 +2,7 @@
     <div>
         <div class="container-fluid">
        
-                    <div class="container">
+        <div class="container">
                         <h2>Sửa bài viết</h2>
                         <form @submit.prevent="updateData">
                             <div class="form-group">

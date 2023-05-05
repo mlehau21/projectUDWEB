@@ -2,20 +2,20 @@
         <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-8 col-lg-offset-2">
-                <h2>Login Form</h2>
+                <h2>Đăng Nhập</h2>
                 <form @submit.prevent="onLogin">
                     <div class="form-group" :class="{invalid: $v.email.$error}">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" @blur="$v.email.$touch()" v-model="email">
-                        <p v-if="!$v.email.email">Please provide a valid email address</p>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" @blur="$v.email.$touch()" v-model="email">
+                        <p v-if="!$v.email.email">Nhập email</p>
                     </div>
 
                     <div class="form-group" :class="{invalid: $v.password.$error}">
                         <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" @blur="$v.password.$touch()" v-model="password">
+                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" @blur="$v.password.$touch()" v-model="password">
                     </div>
 
-                    <button type="submit" :disabled="$v.$invalid">Submit</button>
+                    <button type="submit" :disabled="$v.$invalid">Đăng Nhập</button>
                 </form>
             </div>
         </div>

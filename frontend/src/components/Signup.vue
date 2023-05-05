@@ -2,27 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-8 col-lg-offset-2">
-                <h2>SignUp Form</h2>
+                <h2>ĐĂNG KÝ</h2>
                 <form @submit.prevent="onSubmit">
                     <div class="form-group" :class="{invalid: $v.email.$error}">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" @blur="$v.email.$touch()" v-model="email">
-                        <p v-if="!$v.email.email">Please provide a valid email address</p>
-                        <p v-if="!$v.email.required">This field is required</p>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" @blur="$v.email.$touch()" v-model="email">
+                        <p v-if="!$v.email.email">Nhập email của bạn</p>
+                        <p v-if="!$v.email.required">Đây là thông tin bắt buộc</p>
                     </div>
 
                     <div class="form-group" :class="{invalid: $v.password.$error}">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" @blur="$v.password.$touch()" v-model="password">
+                        <label for="pwd">Mật khẩu:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" @blur="$v.password.$touch()" v-model="password">
                     </div>
     
                     <div class="form-group" :class="{invalid: $v.confirmPassword.$error}">
-                        <label for="pwd1">Confirm Password:</label>
-                        <input type="password" class="form-control" id="pwd1" placeholder="Confirm password" name="pwd" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword">
-                        <p v-if="$v.confirmPassword.$error">Password doesn't match</p>
+                        <label for="pwd1">Nhập lại mật khẩu:</label>
+                        <input type="password" class="form-control" id="pwd1" placeholder="Nhập lại mật khẩu" name="pwd" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword">
+                        <p v-if="$v.confirmPassword.$error">Mật khẩu không khớp</p>
                     </div>
 
-                    <button type="submit" :disabled="$v.$invalid">Submit</button>
+                    <button type="submit" :disabled="$v.$invalid">Xác nhận</button>
                 </form>
             </div>
         </div>
